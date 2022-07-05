@@ -5,9 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Ginto", "sans-serif"],
-        "ginto-medium": ["Ginto-medium", "sans-serif"],
+        /* "ginto-medium": ["Ginto-medium", "sans-serif"],
         "ginto-semibold": ["Ginto-semibold", "sans-serif"],
-        "ginto-bold": ["Ginto-bold", "sans-serif"],
+        "ginto-bold": ["Ginto-bold", "sans-serif"], */
       },
     },
     colors: {

@@ -1,33 +1,31 @@
+@font-face {
+  font-family: Ginto;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/gh/ROMVoid95/DiscordFonts@master/Ginto/Ginto-400.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: Ginto;
+  font-weight: 500;
+  src: url(https://cdn.jsdelivr.net/gh/ROMVoid95/DiscordFonts@master/Ginto/Ginto-500.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: Ginto;
+  src: url(https://cdn.jsdelivr.net/gh/ROMVoid95/DiscordFonts@master/Ginto/Ginto-600.woff)
+    format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Ginto;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/gh/ROMVoid95/DiscordFonts@master/Ginto/Ginto-700.woff)
+    format("woff");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: "Ginto";
-  font-weight: 400;
-  src: url("./fonts/Ginto-400.woff") format("woff");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Ginto-medium";
-  font-weight: 500;
-  src: url("./fonts/Ginto-500.woff") format("woff");
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Ginto-semibold";
-  font-weight: 600;
-  src: url("./fonts/Ginto-600.woff") format("woff");
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Ginto-bold";
-  font-weight: 700;
-  src: url("./fonts/Ginto-700.woff") format("woff");
-  font-style: normal;
-  font-display: swap;
-}
