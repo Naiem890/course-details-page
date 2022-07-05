@@ -11,7 +11,7 @@ const ShareIcon = () => {
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 576 512"
-      class="h-[18px]"
+      className="h-[18px]"
     >
       <path
         fill="currentColor"

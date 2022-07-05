@@ -1,0 +1,15 @@
+{
+  "title": "Summer Art Camp! 5 Days of Artists and Painting Monet, Van Gogh, Matisse, & More",
+  "type": "Multi-Day Course",
+  "description": "In this 5 day class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate paintings using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.",
+  "image": "https://i.ibb.co/71CjZZV/course-Img.webp",
+  "instructor": {
+    "name": "Kimberly R Moseler",
+    "image": "https://i.ibb.co/8Mg64kb/course-Instructor.jpg",
+    "review": {
+      "total": "469",
+      "thisClass": "5"
+    },
+    "completedBy": "12"
+  }
+}

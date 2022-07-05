@@ -1,7 +1,6 @@
 import React from "react";
 
 const LeftArrowIcon = (props) => {
-  console.log(props);
   return (
     <svg
       aria-hidden="true"

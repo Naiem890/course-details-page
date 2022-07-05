@@ -11,7 +11,7 @@ const RatingIcon = () => {
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 576 512"
-      class="cursor-default h-[18px] text-[#FDC840]"
+      className="cursor-default h-[18px] text-[#FDC840]"
     >
       <path
         fill="currentColor"
