@@ -1,17 +1,20 @@
 import React from "react";
 import courseImg from "./../../src/images/courseImg.webp";
 import courseInstructorImg from "./../../src/images/courseInstructor.jpg";
-import RatingIcon from "./shared/RatingIcon";
+import HeartIcon from "./icons/HeartIcon";
+import LeftArrowIcon from "./icons/LeftArrowIcon";
+import RatingIcon from "./icons/RatingIcon";
+import ShareIcon from "./icons/ShareIcon";
 
 const CourseDetails = () => {
   return (
-    <div className="max-w-[1140px] mx-auto">
+    <div className="max-w-[1120px] mx-auto">
       <div className="pt-[1em] pb-[3em]">
-        <h1 className="text-[40px] leading-[1.2] tracking-[-0.01em] font-bold">
+        <h1 className="text-[40px] leading-[1.2] tracking-[-0.01em] font-ginto-bold">
           Summer Art Camp! 5 Days of Artists and Painting Monet, Van Gogh,
           Matisse, &amp; More
         </h1>
-        <span className="flex items-center gap-[0.5em]  text-gray leading-none font-medium">
+        <span className="flex items-center gap-[0.5em]  text-gray leading-none font-ginto-medium">
           Multi-Day Course{" "}
           <svg
             aria-hidden="true"
@@ -39,42 +42,65 @@ const CourseDetails = () => {
               watercolor. Students will have fun learning about the artists &
               creating their own art inspired by their work.{" "}
             </p>
-            <a href="/" className="flex items-center gap-2 mt-[1em]">
-              <img
-                src={courseInstructorImg}
-                alt=""
-                className="h-[30px] rounded-full"
-              />
-              <span className=" text-primary leading-[27px]">
-                Kimberly R Moseler
-              </span>
-            </a>
             <div>
-              <div className="flex items-center gap-2">
-                <div className="flex">
-                  <RatingIcon />
-                  <RatingIcon />
-                  <RatingIcon />
-                  <RatingIcon />
-                  <RatingIcon />
-                </div>
-                <span className="text-sm text-gray leading-normal">
-                  469 total reviews for this teacher
+              <a href="/" className="flex items-center gap-2 my-[1em]">
+                <img
+                  src={courseInstructorImg}
+                  alt=""
+                  className="h-[30px] rounded-full"
+                />
+                <span className=" text-primary leading-[27px]">
+                  Kimberly R Moseler
                 </span>
+              </a>
+              <div className="">
+                <div className="flex items-center gap-2 mt-[0.5em]">
+                  <div className="flex">
+                    <RatingIcon />
+                    <RatingIcon />
+                    <RatingIcon />
+                    <RatingIcon />
+                    <RatingIcon />
+                  </div>
+                  <span className="text-sm text-gray leading-normal">
+                    469 total reviews for this teacher
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 mt-[0.5em]">
+                  <div className="flex">
+                    <RatingIcon />
+                    <RatingIcon />
+                    <RatingIcon />
+                    <RatingIcon />
+                    <RatingIcon />
+                  </div>
+                  <span className="text-sm text-gray leading-normal">
+                    5 reviews for this class
+                  </span>
+                </div>
               </div>
             </div>
-            <div className="">Completed by 21 learners</div>
+            <div className="mt-[0.5em]">Completed by 21 learners</div>
           </div>
-          <div>
-            <button className="bg-primary text-white">
+          <div className="flex items-center gap-[1em]">
+            <button className="bg-primary hover:bg-primaryDark transition-all shadow-sm shadow-primary text-white py-3 px-7 flex items-center gap-2 rounded-full font-ginto-medium text-lg leading-none">
               See Class Schedule
+              <LeftArrowIcon className="h-[18px]"></LeftArrowIcon>
             </button>
-            <button>Save</button>
-            <button>Share</button>
+            <div className="flex items-center">
+              <button className="flex items-center p-[18px] gap-[6px] font-ginto-medium text-primaryDark hover:underline transition-all">
+                <HeartIcon />
+                Save
+              </button>
+              <button className="flex items-center p-[18px] gap-[6px] font-ginto-medium text-primaryDark hover:underline transition-all">
+                <ShareIcon />
+                Share
+              </button>
+            </div>
           </div>
         </div>
         <div>
-          <img src={courseImg} alt="" />
+          <img src={courseImg} alt="" className="block w-full" />
         </div>
       </div>
     </div>
