@@ -1,18 +1,26 @@
 import React, { useEffect, useState } from "react";
 import CourseActionBar from "./CourseActionBar";
+import Loading from "./icons/Loading";
 import QuestionIcon from "./icons/QuestionIcon";
 import InstructorProfile from "./InstructorProfile";
 
 const CourseDetails = () => {
   const [courseData, setCourseData] = useState({});
-
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
+    setIsLoading(true);
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => {
         setCourseData(data);
+        setIsLoading(false);
       });
   }, []);
+
+  if (isLoading) {
+    return <Loading></Loading>;
+  }
+
   return (
     <div className="max-w-[1120px] mx-auto px-[1em] my-5">
       <div className="pt-[1em] md:pb-[3em] pb-[1em]">
